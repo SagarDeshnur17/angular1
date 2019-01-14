@@ -1,0 +1,64 @@
+<!-- <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
+
+<mat-toolbar color='blue'>
+    
+  <mat-toolbar-row>
+      <span>EMINEM</span>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+    <span>SNOOP DOGG</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>IMAGE OF EMINEM</mat-card-title>
+      </mat-card-header>
+    <img mat-card-image class="irc_mi" src="http://conversationsabouther.net/wp-content/uploads/2015/07/eminem.jpg" alt="Photo of a EMINEM">
+    <mat-card-content>
+      <p>
+        Lose yourself in the music the moment you own it you better never let it go. 
+        One shot do not miss your chance to blow, this oppertunity comes once in a life time.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-grid-list cols="2" rowHeight="2:1">
+      <mat-grid-tile>EMINEM</mat-grid-tile>
+      <mat-grid-tile>SLIMSHADY</mat-grid-tile>
+      <mat-grid-tile>STAN</mat-grid-tile>
+      <mat-grid-tile>EMIWAY</mat-grid-tile>
+    </mat-grid-list>  -->
+    <ngx-spinner
+bdColor = "rgba(30,216,216,0.11)"
+size = "large"
+color = "#3d33ca"
+type = "ball-clip-rotate"
+></ngx-spinner>
+
+    <div class="example-container1">
+        <mat-form-field>
+          <input matInput placeholder="username" [(ngModel)]="loginReq.id">
+        </mat-form-field>
+      
+        <div class="example-container">
+            <mat-form-field>
+              <input matInput placeholder="password" [type]="hide ? 'password' : 'text'" [(ngModel)]="loginReq.pwd">
+              <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </mat-form-field>
+            </div>
+          
+        <button mat-raised-button color="primary" (click)="login()">Submit</button>
+        
+      </div>
+      
